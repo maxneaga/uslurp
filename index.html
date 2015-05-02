@@ -7,7 +7,21 @@
 
 <script>
 $( document ).ready(function() {
-	
+	$('input:radio').change(
+		function(){
+			$("#twitter-widget-0").hide();
+			$("#twitter-widget-1").hide();
+			$("#twitter-widget-2").hide();
+			$("#twitter-widget-3").hide();
+			$("#twitter-widget-4").hide();
+			$("#twitter-widget-5").hide();
+			$("#twitter-widget-6").hide();
+		
+			var feed_to_show = this.value;
+			$("#twitter-widget-0").hide();
+			$("#"+feed_to_show).show();
+		}
+	); 
 });
 </script>
 
@@ -18,19 +32,19 @@ $( document ).ready(function() {
 
 <form style="margin-bottom: 30px">
 	<u>Feeds to display</u><br>
-	<input type="radio" name="feed" value="uslurp" id="uslurp_check" checked>
+	<input type="radio" name="feed" value="twitter-widget-0" id="uslurp_check" checked>
 	<label for="uslurp_check">uslurp (all)</label><br>
-	<input type="radio" name="feed" value="CentennialDiningHall" id="CentennialDiningHall_check">
+	<input type="radio" name="feed" value="twitter-widget-1" id="CentennialDiningHall_check">
 	<label for="CentennialDiningHall_check">Centennial Dining Hall</label><br>
-	<input type="radio" name="feed" value="ComstockDiningHall" id="ComstockDiningHall_check">
+	<input type="radio" name="feed" value="twitter-widget-2" id="ComstockDiningHall_check">
 	<label for="ComstockDiningHall_check">Comstock Dining Hall</label><br>
-	<input type="radio" name="feed" value="FreshFoodCompany" id="FreshFoodCompany_check">
+	<input type="radio" name="feed" value="twitter-widget-3" id="FreshFoodCompany_check">
 	<label for="FreshFoodCompany_check">Fresh Food Company</label><br>
-	<input type="radio" name="feed" value="PioneerDiningHall" id="PioneerDiningHall_check">
+	<input type="radio" name="feed" value="twitter-widget-4" id="PioneerDiningHall_check">
 	<label for="PioneerDiningHall_check">Pioneer Dining Hall</label><br>
-	<input type="radio" name="feed" value="SanfordDiningHall" id="SanfordDiningHall_check">
+	<input type="radio" name="feed" value="twitter-widget-5" id="SanfordDiningHall_check">
 	<label for="SanfordDiningHall_check">Sanford Dining Hall</label><br>
-	<input type="radio" name="feed" value="MiddlebrookDiningHall" id="MiddlebrookDiningHall_check">
+	<input type="radio" name="feed" value="twitter-widget-6" id="MiddlebrookDiningHall_check">
 	<label for="MiddlebrookDiningHall_check">Middlebrook Dining Hall</label><br>
 </form>
 
@@ -39,32 +53,32 @@ $( document ).ready(function() {
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<div id="#CentennialDiningHall" style="display: none">
+<div id="#CentennialDiningHall">
 	<a class="twitter-timeline" href="https://twitter.com/hashtag/CentennialDiningHall" data-widget-id="594309125380640768">#CentennialDiningHall Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<div id="#ComstockDiningHall" style="display: none">
+<div id="#ComstockDiningHall">
 	<a class="twitter-timeline" href="https://twitter.com/hashtag/ComstockDiningHall" data-widget-id="594309625299783680">#ComstockDiningHall Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<div id="#FreshFoodCompany" style="display: none">
+<div id="#FreshFoodCompany">
 	<a class="twitter-timeline" href="https://twitter.com/hashtag/FreshFoodCompany" data-widget-id="594310092633280512">#FreshFoodCompany Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<div id="#PioneerDiningHall" style="display: none">
+<div id="#PioneerDiningHall">
 	<a class="twitter-timeline" href="https://twitter.com/hashtag/PioneerDiningHall" data-widget-id="594311298105630721">#PioneerDiningHall Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<div id="#SanfordDiningHall" style="display: none">
+<div id="#SanfordDiningHall">
 	<a class="twitter-timeline" href="https://twitter.com/hashtag/SanfordDiningHall" data-widget-id="594311885551476736">#SanfordDiningHall Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<div id="#MiddlebrookDiningHall" style="display: none">
+<div id="#MiddlebrookDiningHall">
 	<a class="twitter-timeline" href="https://twitter.com/hashtag/MiddlebrookDiningHall" data-widget-id="594312900459831296">#MiddlebrookDiningHall Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
