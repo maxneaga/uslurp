@@ -15,9 +15,10 @@ $(document).ready(function(){
 			$("#FreshFoodCompany").hide();
 			$("#PioneerDiningHall").hide();
 			$("#SanfordDiningHall").hide();
-			$("MiddlebrookDiningHall").hide();
+			$("#MiddlebrookDiningHall").hide();
 		
 			var feed_to_show = this.value;
+			console.log(feed_to_show);
 			$("#"+feed_to_show).show();
 		}
 	); 
