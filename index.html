@@ -2,6 +2,7 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="test.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -9,22 +10,24 @@
       href="/static/images/identity/HTML5_Badge_64.png" />
 <link rel="apple-touch-icon-precomposed"
       href="/static/images/identity/HTML5_Badge_64.png" />
+
 <script>
+/*
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   window.addEventListener('load', function(e) {
     setTimeout(function() { window.scrollTo(0, 1); }, 1);
   }, false);
 
-}
-
+}*/
 </script>
+
 <title>USlurp</title>
 
 <script type="text/javascript">
 $(document).ready(function(){
 	$('input:radio').change(
 		function(){
-			$("#uslurp").hide();
+			$("#USlurp").hide();
 			$("#CentennialDiningHall").hide();
 			$("#ComstockDiningHall").hide();
 			$("#FreshFoodCompany").hide();
@@ -47,9 +50,9 @@ $(document).ready(function(){
 <h1>USlurp</h1>
 
 <form style="margin-bottom: 30px">
-	<u>Feeds to display</u><br>
-	<input type="radio" name="feed" value="uslurp" id="uslurp_check" checked>
-	<label for="uslurp_check">uslurp (all)</label><br>
+	<!--<u>Feeds to display</u><br>-->
+	<input type="radio" name="feed" value="USlurp" id="USlurp_check" checked>
+	<label for="USlurp_check">USlurp (all)</label><br>
 	<input type="radio" name="feed" value="CentennialDiningHall" id="CentennialDiningHall_check">
 	<label for="CentennialDiningHall_check">Centennial Dining Hall</label><br>
 	<input type="radio" name="feed" value="ComstockDiningHall" id="ComstockDiningHall_check">
@@ -64,8 +67,8 @@ $(document).ready(function(){
 	<label for="MiddlebrookDiningHall_check">Middlebrook Dining Hall</label><br>
 </form>
 
-<div id="uslurp">
-	<a class="twitter-timeline" href="https://twitter.com/hashtag/uslurp" data-widget-id="594308503377960960">#uslurp Tweets</a>
+<div id="USlurp">
+	<a class="twitter-timeline" href="https://twitter.com/hashtag/USlurp" data-widget-id="595028765668810752">#USlurp Tweets</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
