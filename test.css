@@ -1,13 +1,10 @@
 body {
-    background-color: ivory;
-
+    background-color: #FFDC73;
+	color: #404d5b;
+	font-family: 'Raleway', Helvetica, 'Helvetica Neue', 'Futura', Verdana, 'Geneva', sans-serif;
+	font-size : 25px;
 }
 
 h1 {
-    color: navy;
-    font-family: "Times New Roman", Georgia, Serif;
-}
-
-label {
-	font-size : 25px ;
+    color: #7a0019;
 }
